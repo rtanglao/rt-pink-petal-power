@@ -16,3 +16,11 @@ ls -d /home/roland/GIT/rt-pink-petal-power/ORIGINALS/*.jpg > pink_petal_power_jp
 ./print-file-width-length-max75-x-max75-y.rb pink_petal_power_jpg_filenames.txt \
 > pink-petal-power-75px-75px-max-x-maxy.txt
 ```
+
+* 3\. make the 75x75 pixel thumbnails
+
+```bash
+mkdir 75PX_BY_75PX_PATCHES
+cd !$
+../create-75px-75px-patches.rb ../pink-petal-power-75px-75px-max-x-maxy.txt 10000
+```
