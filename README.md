@@ -3,6 +3,15 @@ tights, tshirts and other stuff from pink vancouver petals april-may2020
 
 * You can find the source images at:
     * https://www.flickr.com/photos/roland/albums/72157714184799381
+## 31may2020 create the left and right leg graphics
+
+* 1\. 3825 jpegs per leg
+
+```bash
+ls -1 *.jpg | shuf -n 3825 > right-leg-shuffled-3825-pink-petal-jpgs.txt
+ls -1 *.jpg | shuf -n 3825 > left-leg-shuffled-3825-pink-petal-jpgs.txt
+```
+
 ## 31may2020 create the  thumbnails
 as per: http://rolandtanglao.com/2020/02/17/p1-how-i-made-art-of-where-tights-berlin/
 
