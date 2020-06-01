@@ -10,6 +10,12 @@ tights, tshirts and other stuff from pink vancouver petals april-may2020
 ```bash
 ls -1 *.jpg | shuf -n 3825 > right-leg-shuffled-3825-pink-petal-jpgs.txt
 ls -1 *.jpg | shuf -n 3825 > left-leg-shuffled-3825-pink-petal-jpgs.txt
+montage -verbose -adjoin -tile 45x85 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @right-leg-shuffled-3825-pink-petal-jpgs.txt \
+right-leg_artofwhere-pink-petal-2020.png
+montage -verbose -adjoin -tile 45x85 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @left-leg-shuffled-3825-pink-petal-jpgs.txt \
+left-leg_artofwhere-pink-petal-2020.png
 ```
 
 ## 31may2020 create the  thumbnails
