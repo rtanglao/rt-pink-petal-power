@@ -4,6 +4,33 @@ tights, tshirts and other stuff from pink vancouver petals april-may2020
 * You can find the source images at:
     * https://www.flickr.com/photos/roland/albums/72157714184799381
 
+## 01june2020 create the right and left leg from the shuffled files
+
+```bash
+montage -verbose -adjoin -tile 45x85 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @right-leg-shuffled-3825-pink-petal-jpgs.txt \
+right-leg_thumbnail-artofwhere-pink-petal-2020.png
+montage -verbose -adjoin -tile 45x85 +frame +shadow +label -adjoin \
+-geometry '75x75+0+0<' @left-leg-shuffled-3825-pink-petal-jpgs.txt \
+left-leg_thumbnail_artofwhere-pink-petal-2020.png
+```
+
+## 01june2020 shuffle the files to create right and left leg
+
+```bash
+cat 11-times-all-thumbnails-path-names.txt | \
+shuf -n 3825 > right-leg-shuffled-3825-pink-petal-jpgs.txt
+cat 11-times-all-thumbnails-path-names.txt | \
+shuf -n 3825 > left-leg-shuffled-3825-pink-petal-jpgs.txt
+```
+
+## 01june2020 create file to shuffle for right and left leg
+
+```bash
+ls -d $PWD/thumb*.png > all-thumbnails-path-names.txt
+for i in {1..11}; do cat all-thumbnails-path-names.txt \
+>>11-times-all-thumbnails-path-names.txt; done
+```
 ## 01june2020 create 75x75 thumbnails
 
 ```bash
