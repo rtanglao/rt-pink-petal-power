@@ -3,6 +3,15 @@ tights, tshirts and other stuff from pink vancouver petals april-may2020
 
 * You can find the source images at:
     * https://www.flickr.com/photos/roland/albums/72157714184799381
+
+## 01june2020 create 75x75 thumbnails
+
+```bash
+mkdir /home/roland/GIT/rt-pink-petal-power/THUMBS_75X75
+cd !$
+# The exclamation mark means distort if the original is not a square
+magick '../ORIGINALS/*.jpg' -resize 75x75\! thumbnail%03d.png &
+```
 ## 31may2020 create the left and right leg graphics
 
 * 1\. 3825 jpegs per leg
