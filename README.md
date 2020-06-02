@@ -4,6 +4,13 @@ tights, tshirts and other stuff from pink vancouver petals april-may2020
 * You can find the source images at:
     * https://www.flickr.com/photos/roland/albums/72157714184799381
 
+## 01june2020 create file to shuffle for right and left leg
+
+```bash
+ls -d $PWD/thumb*.png > all-thumbnails-path-names.txt
+for i in {1..11}; do cat all-thumbnails-path-names.txt \
+>>11-times-all-thumbnails-path-names.txt; done
+```
 ## 01june2020 create 75x75 thumbnails
 
 ```bash
